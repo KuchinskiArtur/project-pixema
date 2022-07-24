@@ -1,0 +1,25 @@
+.wrapperPost p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #afb2b6;
+  margin: 0;
+}
+
+.wrapperPost h1 {
+  margin: 10px 0 3px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+.postOne img {
+  width: 266px;
+  height: 357px;
+  border-radius: 8px;
+}

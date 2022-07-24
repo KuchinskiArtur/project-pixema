@@ -1,0 +1,251 @@
+.wrapperHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+.wrapperHeader input {
+  width: 888px;
+  height: 56px;
+  background: #323537;
+  border-radius: 10px;
+  margin-left: 166px;
+  margin-bottom: 0;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7b61ff;
+  color: #7b61ff;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  margin-left: 20px;
+}
+
+.initials {
+  font-size: 12px;
+  align-items: center;
+  color: white;
+  margin: 0;
+}
+
+.name {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  width: 110px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: black;
+  color: gray;
+  margin-top: 30px;
+}
+
+button:hover {
+  color: #7b61ff;
+}
+
+span {
+  color: #fff;
+  font-size: 40px;
+}
+
+p {
+  color: #7b61ff;
+  font-size: 40px;
+  margin-left: 15px;
+  font-weight: bold;
+  margin: 48px 0 0 64px;
+}
+
+.wrapperButton {
+  width: 294px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.leftContent {
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+  max-width: 1500px;
+  width: 100%;
+  max-height: 100%;
+  margin: 40px 0 0 64px;
+}
+
+button i {
+  width: 14px;
+  height: 19px;
+  margin-right: 22px;
+}
+
+.logo {
+  width: 158px;
+  height: 24px;
+  color: #afb2b6;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 20px 0;
+}
+
+.burgerMenu {
+  color: white;
+  margin-left: 50px;
+}
+
+.burger-menu {
+  height: 100%;
+  width: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger-bar {
+  width: 2em;
+  height: 0.5em;
+  margin: 3px;
+  background-color: rgb(0, 183, 255);
+  border-radius: 0.5em;
+}
+
+.menu {
+  width: 16%;
+  height: 60vh;
+  background-color: black;
+  position: absolute;
+  top: 30%;
+  right: 2%;
+  z-index: -1;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inherit;
+}
+
+.burger-bar.clicked:nth-child(1) {
+  transform: rotate(45deg) translate(-0.6em, 1.4em);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2) {
+  transform: scale(0.1);
+  transition: ease-out 0.5s;
+  display: none;
+}
+
+.burger-bar.clicked:nth-child(3) {
+  transform: rotate(140deg) translate(1.01em, 1em);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.unclicked {
+  transform: rotate(0) translate(0);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.toggle {
+  touch-action: pan-x;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.toggle-input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.toggle-check,
+.toggle-uncheck {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.toggle-container {
+  position: relative;
+  width: 64px;
+  height: 30px;
+  padding: 0;
+  border-radius: 30px;
+  background-color: #4d4d4d;
+  transition: all 0.2s ease;
+  left: 50px;
+}
+
+.toggle-circle {
+  position: absolute;
+  top: 12%;
+  left: 5%;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #4d4d4d;
+  border-radius: 50%;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  transition: all 1.25s ease;
+}
+
+.darkTheme.dark .toggle-circle {
+  left: 60%;
+}
+
+.btnThemeWrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
